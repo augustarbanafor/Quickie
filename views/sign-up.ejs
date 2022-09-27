@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="">
+    <link rel="stylesheet" href="/CSS/SignUp.css">
+</head>
+    <title>QUICKIE | <%= title %></title>
+    <body>
+        <header>
+            <img src="/Image/QUICKIE-removebg-preview.png" alt="My Logo is here">
+            <% if(errors) {%>
+                <% for (const error in errors) {%>
+                    <div class="text-danger"><%= errors[error]%></div>
+                <%}%>
+            <%}%>
+
+
+            <form action="/sign-up" method="POST" class="form">
+               <h3>GET STARTED</h3>
+               <div>
+                   <input id="form-group" type="text"
+                   name="full_name"
+                   value=""
+                  id="Full Name"
+                  placeholder="Full Name"><br><br>
+                  </div>              
+                   
+                 <div>
+                  <input id="form-group" type="text"
+                  name="email"
+                  value=""
+                 id="Email"
+                 placeholder="Email"><br><br>
+                 </div>
+                 <div>
+                    <input id="form-group" type="text"
+                    name="password"
+                    value=""
+                   id="Password"
+                   placeholder="Password"><br><br>
+                   </div>
+                 <div>
+                    <input id="form-group" type="text"
+                    name="confirm_password"
+                    value=""
+                   id="Confirm Password"
+                   placeholder="Confirm Password"><br><br>
+                   </div>
+                   <button id="signup"type="submit">Sign up</button><br><br>
+                   <button id="facebook" type="submit">Sign up with Facebook</button><br><br>
+                   <button id="google"type="submit">Sign up with Google</button><br><br>
+                   <h4>Already have an account? <span><a href="/login">Login</span> </a>
+                </body>
+            </form> 
+         </header>
+    </head>
+    </html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/29a6b426db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+  <title>QUICKIE | <%= title %></title>
+  <body>
+   <!-- Header Starts --> 
+    <header class="header">
+      <!-- navigation starts -->
+      <nav class="navigation flex">
+        <div class="nav-logo">
+          <img src="QUICKIE-removebg-preview.png" alt="" class="nav-logo__logo">
+        </div>
+        <div class="nav-links">
+          <ul class="list flex">
+            <%if(!user) {%>
+            <li class="list-item"><a href="/login" class="list-item__links list-item__links--login">Login in</a></li>
+            <li class="list-item list-item--register"><a href="" class="list-item__links ">Sign-up</a></li>
+            <%}%>
+            <%if(user) {%>
+              <li class="list-item list-item--register"><a href="" class="list-item__links ">Logout</a></li>
+            <%}%>
+          </ul>
+        </div>
+      </nav>
+      <!-- navigation ends -->
+      <div class="banner-text">
+        <h1 class="banner-text__heading"> The #1 platform that provides quick and easy access to a buffet of professionals ready to work, around the location</h1>
+
+        <a href="" class="banner__button">WELCOME</a>
+      </div>
+    </header>
+    <!-- Header Ends -->
+    <!-- Services starts -->
+  <section class="services">
+    <h1> SERVICES</h1>
+    <h4> find artisans in lagos</h4>
+    <div class="articles">
+      <div class="post-card">
+        <div class="img_container img_1"></div>
+        <p class="post-card_text">Carpentery</p>
+      </div>
+      <div class="post-card">
+        <div class="img_container img_2"></div>
+        <p class="post-card_text">Barber</p>
+      </div>
+      <div class="post-card">
+        <div class="img_container img_3"></div>
+        <p class="post-card_text">Makeup artist</p>
+      </div>
+      <div class="post-card">
+        <div class="img_container img_4"></div>
+        <p class="post-card_text">Plumbing</p>
+      </div>
+      <div class="post-card">
+        <div class="img_container img_5"></div>
+        <p class="post-card_text">Laundry</p>
+      </div>
+      <div class="post-card">
+        <div class="img_container img_6"></div>
+        <p class="post-card_text">Electrician</p>
+      </div>
+      <div class="post-card">
+        <div class="img_container img_7"></div>
+        <p class="post-card_text">Beauty & Spa</p>
+      </div>
+      <div class="post-card">
+        <div class="img_container img_8"></div>
+        <p class="post-card_text">Cleaner</p>
+      </div>
+    </div>
+    <div class="banner__button2">
+      <a href="#" class="banner__btn2"> view more services </a>
+    </div>
+  </section>
+
+  <section class="enquire">
+    <h1 class="enquire-head__text">how it works</h1>
+    <div class="enquire-wrap">
+      <div class="enquire-wrap_left">
+        <div class="enquire-left">
+          <h2  class="enquire-head">find a professional</h2>
+          <p class="enquire_text">sign up on quickie and  get linked with quality service providers to get your job done</p>
+        </div>
+        <div class="enquire-right">
+          <h2 class="enquire-head">Get a quote</h2>
+          <p class="enquire_text">Count a refferal, quickie gives you a 5% discount on your next appointment</p>
+        </div>
+      </div>
+
+        <img src="mobile.svg" class="enquire-img" alt="mobile">
+      
+      <div class="enquire-wrap_right">
+        <div class="enquire-left">
+          <h2 class="enquire-head">Hire the professional</h2>
+          <p class="enquire_text">earn more money, become an artisians and get more jobs opportunities to earn cool cash and boost your income</p>
+        </div>
+        <div class="enquire-right">
+          <h2 class="enquire-head">Service Delivery</h2>
+          <p class="enquire_text">Quickie is quick, reliable and economical</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Wrapper-title">
+    <h2 class="wrapper-title__head">Why use quickie</h2>
+    <div class="Wrapper">
+  
+<img src="Frame 4.png" class="wrapper-img" alt="">
+
+      <div class="Wrapper-items">
+     <div class="wrapper-item">
+       <h2  class="wrapper-heading">Budget Friendly</h2>
+       <p class="wrapper_sub">quickie allow artisans ti input their prices for any job, so that you don't have to break abank to get the job done just search for an artisan that suit your budget.</p>
+     </div>
+     <div class="wrapper-item">
+       <h2 class="wrapper-heading">Budget Friendly</h2>
+       <p class="wrapper_sub">quickie allow artisans ti input their prices for any job, so that you don't have to break abank to get the job done just search for an artisan that suit your budget.</p>
+     </div>
+     <div class="wrapper-item">
+       <h2 class="wrapper-heading">Budget Friendly</h2>
+       <p class="wrapper_sub">quickie allow artisans ti input their prices for any job, so that you don't have to break abank to get the job done just search for an artisan that suit your budget.</p>
+     </div>
+      </div>
+    </div>
+  </section>
+
+   <footer>
+     <div class="footer-items">
+       <img src="QUICKIE-removebg-preview.png" alt="">
+       <div class="footer-socials">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+       </div>
+       <div class="footer-link">
+         <p  class="footer-links">about quickie</p>
+         <p class="footer-links">become a professional</p>
+         <p class="footer-links">search services</p>
+         <p class="footer-links">Contact Us</p>
+       </div>
+     </div>
+     <p class="copyright">&copy; 2022 Quickie Limited.All Right Reserved.</p>
+   </footer>
+
+
+
+
+
+
+  
+
+  <!-- Services Ends -->
+
+  <!-- <p> adipisicing elit. Id accusamus, labore voluptatem dolorum facilis corrupti! Quisquam animi in accusamus rerum. Enim delectus quis molestias! Alias accusantium deserunt labore pariatur iusto nihil quasi voluptas, enim amet. Fugit minus debitis ipsam qui accusantium velit dolorum facere perspiciatis, quisquam possimus tenetur voluptate eius vero id rerum itaque adipisci, corporis dolorem nesciunt? Laborum, possimus animi dignissimos repellat, dolores obcaecati aliquid voluptatibus esse quae inventore nostrum nisi? Rerum, labore numquam suscipit magnam non perferendis voluptate facere repellat deleniti harum nobis assumenda voluptatibus, accusantium culpa quam, alias minus? Maxime ratione quibusdam deleniti eius obcaecati porro repudiandae?</p> -->
+  </body>
+</html>
